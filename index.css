@@ -1,0 +1,313 @@
+/*CSS Reset*/
+/*universal selector*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/*type selectors*/
+nav {
+	font-family: 'Nunito', sans-serif;
+	background-color: #17252A;
+	color: #2b7a78;
+	vertical-align: text-top;
+	border-bottom: 2px solid #DEF2F1;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #3AAFA9;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+}
+
+footer {
+	color: #17252A;
+}
+
+
+/*class selectors*/
+.website-logo1 {
+	height: 50px;
+	width: 50px;
+	margin-right: 20px;
+}
+
+.navbar-toggler {
+	background-color: #3AAFA9;
+}
+
+.btn {
+	background-color: #17252A;
+	color: #FEFFFF;
+	width: 100px;
+	margin-bottom: 10px;	
+}
+
+.btn:hover {
+	color: #3AAFA9;
+}
+
+.btn2 {
+	background-color: #3AAFA9;
+	color: #17252A;
+	width: 100px;
+	margin-bottom: 10px;
+	border: transparent;
+	margin: 5px;
+	padding: 5px;	
+}
+
+.btn3 {
+	background-color: #3AAFA9;
+	color: #17252A;
+	width: 100px;
+	margin-bottom: 10px;
+	border: transparent;
+	padding: 5px;
+}
+
+.btn2:hover {
+	color: #FFFFFF;
+}
+
+.nav-item {
+	text-align: center;
+	padding-left: 10px;
+}
+
+.nav-link {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+
+.nav-link:hover {
+	color: #3AAFA9;
+}
+
+/*parallax scrolling effect for landing page*/
+.fixed-bg1 {
+	background-image: url(./designs/wevdev2-edited.png);
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*parallax scrolling effects for tools section*/
+.fixed-bg2 {
+	background-image: url(./designs/wevdev1-edited.png);
+	max-height: 200vh;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.landing-page {
+	height: 90vh;
+}
+
+.l-page-text1 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bolder;
+	font-size: 8vw;
+	text-shadow: 4px 5px #17252A;
+}
+
+.l-page-text2 {
+	display: inline-block;
+	font-weight: bold;
+	text-shadow: 4px 5px #17252A;
+}
+
+.l-page-text2:hover {
+	background-color: #3AAFA9;
+	border-radius: 5px;
+	color: #17252A;
+	text-shadow: 4px 5px #FEFFFF;
+}
+
+.l-page-text3 {
+	font-weight: bolder;
+	font-size: 2.5vw;
+	text-shadow: 5px 3px #17252A;
+}
+
+.tagline-section {
+	background-color: #FEFFFF;
+	color: #17252A;
+	min-height: 60vh;
+}
+
+.card-text {
+	border-top: 3px solid #3AAFA9;
+}
+
+.eric-img {
+	height: 300px;
+	width: 300px;
+}
+
+.my_name {
+	font-family: 'Archivo Black', sans-serif;
+	font-weight: bolder;
+}
+
+.title {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bolder;
+	color: #17252A;
+}
+
+.subtitle {
+	color: #17252A;	
+}
+
+.project-img {
+	border-radius: 30px;
+}
+
+.project-img:hover {
+	box-shadow: 5px 5px #3AAFA9;
+}
+
+.other-project-img {
+	border-radius: 20px;
+	height: 350px;
+	width: 200px;
+}
+
+.project-details {
+	border-left: 3px solid #3AAFA9;
+	background-color: #DEF2F1;
+	border-radius: 15px;
+}
+
+.other-project-details {
+	border-left: 3px solid #17252A;
+}
+
+.tool:hover {
+	background-color: #FEFFFF;
+	border-radius: 120px;
+}
+
+.map {
+	height: 50vh;
+	width: 100vw;
+	padding: 5px;
+}
+
+.prefooter-icons {
+	height: 25px;
+	width: 25px;
+	padding-bottom: 3px;
+	display: inline-block;
+}
+
+.website-logo2 {
+	height: 100px;
+	width: 100px;
+}
+
+/*id selectors*/
+#nav-icons {
+	height: 25px;
+	width: 25px;
+	padding-bottom: 3px;
+}
+
+	/*typewriting and blinking cursor effects*/
+#typed-out {
+	overflow: hidden;
+	border-right: solid #17252A;
+	border-radius: 10px;
+	font-size: 4vw;
+	width: 0;
+	white-space: nowrap;
+	animation: 
+		typing 3s steps(20, end) forwards,
+		blink .8s infinite;
+	animation-delay: -2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	padding-left: 1.5rem;
+}
+
+@keyframes typing {
+	from { width: 0% }
+	to { width: 85% }
+}
+
+@keyframes blink {
+	from { border-color: transparent; }
+	to { border-color: white; }
+}
+
+/*id selectors*/
+#tagline-details {
+	background-color: #DEF2F1;
+	border: transparent;
+	border-radius: 30px;
+	min-height: 60vh;
+}
+
+#about-me-border {
+	border-left: 3px solid #17252A;
+}
+
+#projects-section {
+	background-color: #FFFFFF;
+	color: #17252A;
+	min-height: 60vh;
+}
+
+#pre-footer {
+	padding: 1rem;
+	background-color: #17252A;
+	color: #0B0B45;
+}
+
+/*Child selectors*/
+.project-details > h3 {
+	font-weight: bolder;
+	color: #3AAFA9;
+}
+
+#pre-footer > div {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+
+#pre-footer > div > * {
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+
+/*multiple selectors*/
+.find-me, .contact-form {
+	background-color: #17252A;
+}
+
+.find-me-title, .contact-me-title, .form-group, .footer-text {
+	color: #3AAFA9;
+}
+
+#nav-icons, .nav-link {
+	display: inline;
+}
+
+/*font families */
+/*font-family: 'Archivo Black', sans-serif;
+font-family: 'Nunito', sans-serif;*/
+
+
