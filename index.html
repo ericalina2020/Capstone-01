@@ -14,10 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
 
-		<!-- External CSS Link -->
-		<link rel="stylesheet" href="./index.css">
+        <!-- External CSS Link -->
+        <link rel="stylesheet" href="./index.css">
 
-		<!-- Favicon Link -->
+        <!-- Favicon Link -->
         <link rel="shortcut icon" type="image/png" href="./designs/favicon.png">
 
         <title>Developer Portfolio</title>
@@ -27,8 +27,10 @@
         <!-- Sticky Navbar Start -->
         <nav class="navbar sticky-top navbar-expand-md py-1">
             <a class="navbar" href="#">
+                <!-- website-logo -->
                 <img class="website-logo1" src="./designs/website-logo.png" alt="website-logo">
             </a>
+            <!-- burger button -->
             <button class="navbar-toggler navbar-light"
                     type="button"
                     data-toggle="collapse"
@@ -38,34 +40,44 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- navbar links -->
             <div class="collapse navbar-collapse" id="myNavbarMenu">
                 <ul class="navbar-nav mr-auto">
+                    <!-- Home -->
                     <li class="nav-item active mx-1">
-                        <img id="nav-icons" src="./designs/home.png" alt="home icon">
+                        <img id="nav-icons" src="designs/home.png" alt="home icon">
                         <a class="nav-link" href="#">
                             HOME
                         </a>
                     </li>
+
+                    <!-- About -->
                     <li class="nav-item mx-1">
-                       <img id="nav-icons" src="./designs/about.png" alt="about icon">
-                        <a class="nav-link" href="#about-me-section">
+                       <img id="nav-icons" src="designs/about.png" alt="about icon">
+                        <a class="nav-link" href="#about-me">
                             ABOUT
                         </a>                            
                     </li>
+
+                    <!-- Projects -->
                     <li class="nav-item mx-1">
-                       <img id="nav-icons" src="./designs/projects.png" alt="projects icon">
-                        <a class="nav-link" href="#projects-section">
+                       <img id="nav-icons" src="designs/projects.png" alt="projects icon">
+                        <a class="nav-link" href="#projects">
                             PROJECTS
                         </a>                            
                     </li>
+
+                    <!-- Tools -->
                     <li class="nav-item mx-1">
-                       <img id="nav-icons" src="./designs/tools.png" alt="tools icon">
+                       <img id="nav-icons" src="designs/tools.png" alt="tools icon">
                         <a class="nav-link" href="#tools">
                             TOOLS
                         </a>                            
                     </li>
+
+                    <!-- Contact -->
                     <li class="nav-item mx-1">
-                       <img id="nav-icons" src="./designs/contact.png" alt="contact icon">
+                       <img id="nav-icons" src="designs/contact.png" alt="contact icon">
                         <a class="nav-link" href="#contact">
                             CONTACT
                         </a>                            
@@ -75,17 +87,22 @@
         </nav>
         <!-- Sticky Navbar End -->
 
-        <!-- Landing Page Start (with parallax scrolling) -->
+        <!-- Landing Page Start (with parallax scrolling effect) -->
         <div class="fixed-bg1 container-fluid">
-            <div class="row landing-page d-flex flex-row align-items-center">
-                <div class="py-2">
-                    <p class="l-page-text1 h1 mx-5">Hi! I'm Eric,</p>
-                    <p id="typed-out" class="l-page-text2 mx-5">
+            <div class="landing-page row d-flex flex-row align-items-center">
+                <div class="mx-3 py-2">
+                    <h1 class="l-page-text1 mx-4">Hi! I'm Eric,</h1>
+                    <div id="typed-out" class="l-page-text2 d-inline-flex ml-4 pxpy-2">
                         A Full Stack Web Developer
+                    </div>
+                    <p class="l-page-text3 ml-4">Need a new website? Let's make your ideas come alive.
                     </p>
-                    <div class="l-page-text3 px-5">
-                        <p>Need A New Website? Let's make your ideas come alive.</p>
-                    </div>      
+                    <a href="https://drive.google.com/file/d/1pHY53jaGpmX7ICWr0I3CvGCgigTNNbvm/view?usp=sharing" target="_blank">
+                        <button class="btn0 ml-4 mb-1 px-1 py-1">Download CV</button>
+                    </a>
+                    <a href="#projects">
+                        <button class="btn0 mt-1 ml-4 px-1 py-1">View My Work</button>
+                    </a>
                 </div>        
             </div>
         </div>
@@ -93,39 +110,37 @@
 
         <!-- Web Design Tagline Start -->
         <div class="tagline-section container-fluid pt-3 pb-4">
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Web Design At Its Finest</h1>
+            <h1 class="text-center font-weight-bold pt-5 pb-4">WEB DESIGN AT ITS FINEST</h1>
             <div class="row d-flex flex-row justify-content-center my-3">
 
                 <!-- tagline card 1 Start -->
-                <div class="tagline-card col-md-5">
-                    <div id="tagline-details" class="card p-5 m-3 d-flex align-items-center justify-content-center">
-                        <img class="add-section-img img-card-top img-fluid w-100 h-100" src="./designs/wevdev3.png" alt="web-graphic">
+                <div class="col-md-5">
+                    <div id="tagline-details" class="card m-3 p-5 d-flex align-items-center justify-content-center">
+                        <img class="img-card-top img-fluid w-100 h-100" src="designs/wevdev5.png" alt="web-graphic">
                         <div class="card-body d-flex align-items-center justify-content-center">
-                            <h4 class="card-text text-center py-2">I strive to meticulously build your website, making each detail match your vision, and a web design that feels right.</h4>
+                            <h4 class="card-text py-2">I strive to meticulously build your website, making each detail match your vision, and a web design that feels right.</h4>
                         </div>
                     </div>
                 </div>
                 <!-- tagline card 1 End -->
  
                 <!-- tagline card 2 Start -->
-                <div class="tagline-card col-md-5">
-                    <div id="tagline-details" class="card p-5 m-3 d-flex align-items-center justify-content-center">
-                        <img class="add-section-img img-card-top img-fluid w-100 h-100 p-3" src="./designs/wevdev4.png" alt="web-graphic">
+                <div class="col-md-5">
+                    <div id="tagline-details" class="card m-3 p-5 d-flex align-items-center justify-content-center">
+                        <img class="img-card-top img-fluid w-100 h-100" src="designs/wevdev4.png" alt="web-graphic">
                         <div class="card-body d-flex align-items-center justify-content-center">
-                            <h4 class="card-text text-center py-2">Through intensive collaboration, I can create high-quality and engaging design for your business.</h4>
+                            <h4 class="card-text py-2">Through intensive collaboration, I can create high-quality and engaging design for your business.</h4>
                         </div>
                     </div>
                 </div>
-                <!-- tagline card 1 End -->
-
+                <!-- tagline card 2 End -->
             </div>
         </div>
         <!-- Web Design Tagline End -->
 
-
         <!-- About Me Start -->
-        <div id="about-me-section" class="container pt-3 pb-4">
-            <h1 class="text-center font-weight-bold pt-5 pb-4">About Me</h1>
+        <div id="about-me" class="container pt-3 pb-4">
+            <h1 class="text-center font-weight-bold pt-5 pb-4">ABOUT ME</h1>
             <div class="row d-flex flex-row justify-content-center align-items-center">
                 <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="eric-img rounded-circle my-5" src="https://media-exp1.licdn.com/dms/image/C4E03AQELPARF55tiqQ/profile-displayphoto-shrink_800_800/0/1607010350065?e=1651104000&v=beta&t=t3dCo01IVigrcl-dwqtF187PzsooxU-ALEV2T7rb8N4" alt="eric's photo">
@@ -134,7 +149,7 @@
                 <div id="about-me-border" class="col-md-5 mx-3">
                     <h1 class="my_name my-1">ERIC D. ALINA, LPT</h1>
                     <h4 class="title py-1">Full-Stack Web Developer | Mobile App Developer</h4>
-                    <p class="about-me-details text-justify">
+                    <p class="text-justify">
                         I'm a Licensed Professional Teacher currently taking my graduate studies on MA in Physics Education at Bicol University Graduate School. I create and design e-portfolios and e-commerce websites for businesses and/or service providers. In school, I also develop Android-based mobile apps using the open-source MIT App Inventor for educational purposes. 
                     </p>
                 </div>
@@ -144,8 +159,8 @@
 
 
         <!-- Projects Start -->
-        <div id="projects-section" class="container-fluid pt-3 pb-4">
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Projects</h1>
+        <div id="projects" class="container-fluid pt-3 pb-4">
+            <h1 class="text-center font-weight-bold pt-5 pb-4">PROJECTS</h1>
 
             <!-- website 1 Start -->
             <div class="row d-flex flex-row justify-content-center align-items-center">
@@ -231,18 +246,16 @@
                 </div>
             </div>
             <!-- website 5 End -->
-
-
         </div>
         <!-- Projects End -->
 
         <!-- Other Projects Start -->
-        <div class="container mb-4">
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Other Projects</h1>
-            <h3 class="subtitle text-center font-weight-bold pb-4">(Mobile App Projects)</h3>
+        <div id="other-projects" class="container pt-3 pb-4">
+            <h1 class="text-center font-weight-bold pt-5 pb-4">OTHER PROJECTS</h1>
+            <h3 class="subtitle text-center font-weight-bold pb-2">(Mobile App Projects)</h3>
 
             <!-- app1 Start -->
-            <div class="row my-5 d-flex flex-row align-items-center justify-content-center">
+            <div class="row my-3 d-flex flex-row align-items-center justify-content-center">
 
                 <!-- app1 carousel Start -->
                 <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
@@ -288,7 +301,7 @@
 
                 <div class="other-project-details col-md-5 mx-3 d-flex flex-column justify-content-center my-5">
                     <h3 class="subtitle font-weight-bold py-1">Particleus</h3>
-                    <p class="text-justify">This mobile application aims to provide basic knowledge of elementary particles to all learners around the world (especially kids). It contains simple games and graphics which acquaint one with some of the elementary particles by playing the memory and matching game, and quark combinations through naming baryons and mesons. Also, familiarize yourself with electron-positron annihilation.</p>
+                    <p class="subtitle text-justify">This mobile application aims to provide basic knowledge of elementary particles to all learners around the world (especially kids). It contains simple games and graphics which acquaint one with some of the elementary particles by playing the memory and matching game, and quark combinations through naming baryons and mesons. Also, familiarize yourself with electron-positron annihilation.</p>
                     <span>
                          <a href="https://play.google.com/store/apps/details?id=appinventor.ai_ericdoria_alina.Particleus" target="_blank">
                             <button class="btn">See more</button>
@@ -299,7 +312,7 @@
             <!-- app1 End -->
 
             <!-- app2 Start -->
-            <div class="row my-5 d-flex flex-row align-items-center justify-content-center">
+            <div class="row my-3 d-flex flex-row align-items-center justify-content-center">
 
                 <!-- app2 carousel Start -->
                 <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
@@ -345,7 +358,7 @@
 
                 <div class="other-project-details col-md-5 mx-3 d-flex flex-column justify-content-center my-5">
                     <h3 class="subtitle font-weight-bold py-1">Liknayan</h3>
-                    <p class="text-justify">Liknayan ("Liknayan" - a native Tagalog translation of "Physics", from the root words: "likas" + "hanayan") is an educational app for Physics learning. This app aims to provide a mobile learning experience for Grade 10 learners in Physics through digital copies of Self-Learning Modules (SLMs). The SLMs were derived from the Department of Education Region V - Division of Camarines Sur. Liknayan includes a Physics AI Quiz (with LeoWiz, an AI Quizzerbot) which tests the user's knowledge of the subject. In addition, this app provides an AI note that enables users to write notes either through speech recognition or manual typing.
+                    <p class="subtitle text-justify">Liknayan ("Liknayan" - a native Tagalog translation of "Physics", from the root words: "likas" + "hanayan") is an educational app for Physics learning. This app aims to provide a mobile learning experience for Grade 10 learners in Physics through digital copies of Self-Learning Modules (SLMs). The SLMs were derived from the Department of Education Region V - Division of Camarines Sur. Liknayan includes a Physics AI Quiz (with LeoWiz, an AI Quizzerbot) which tests the user's knowledge of the subject. In addition, this app provides an AI note that enables users to write notes either through speech recognition or manual typing.
                     </p>
                     <span>
                          <a href="https://play.google.com/store/apps/details?id=appinventor.ai_ericdoria_alina.Liknayan" target="_blank">
@@ -360,35 +373,35 @@
 
 
         <!-- Tools Start -->
-        <div id="tools" class="fixed-bg2 container-fluid pb-5 mb-4">
+        <div id="tools" class="fixed-bg2 container-fluid pt-3 pb-4">
             <!-- Core Tools Start -->
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Core Tools</h1>
-            <div class="col d-flex flex-column align-items-center">
+            <h1 class="text-center font-weight-bold pt-5 pb-4">CORE TOOLS</h1>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center">
                 <div>
-                    <img class="tool img-fluid" src="./devtools/logo-html5.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-html5.png"/>
                 </div>
                 <div>
-                    <img class="tool img-fluid" src="./devtools/logo-css3.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-javascript.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-css3.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-javascript.png"/>
                 </div>
             </div>
             <!-- Core Tools End -->
                 
             <!-- Other Tools Section Start -->
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Other Tools</h1>
+            <h1 class="text-center font-weight-bold pt-5 pb-4">OTHER TOOLS</h1>
             <div class="row text-center">
                 <div class="col-12">
-                    <img class="tool img-fluid" src="./devtools/logo-mongodb.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-nodejs.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-expressjs.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-react.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-heroku.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-mongodb.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-nodejs.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-expressjs.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-react.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-heroku.png"/>
                 </div>
                 <div class="col-12 mt-3">
-                    <img class="tool img-fluid" src="./devtools/logo-git.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-sublime-text-3.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-postman.png"/>
-                    <img class="tool img-fluid" src="./devtools/logo-gitlab-ci-cd.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-git.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-sublime-text-3.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-postman.png"/>
+                    <img class="tool img-fluid" src="devtools/logo-gitlab-ci-cd.png"/>
                 </div>
             </div>
         </div>
@@ -396,11 +409,11 @@
 
 
         <!-- map and form Start -->
-        <div id="contact" class="container mb-4">
-            <h1 class="text-center font-weight-bold pt-5 pb-4">Lets' Get Social!</h1>
+        <div id="contact" class="container pt-3 pb-4">
+            <h1 class="text-center font-weight-bold pt-5 pb-4">LET'S GET SOCIAL!</h1>
             <div class="row d-flex flex-row justify-content-center">
                 <!-- map Start -->
-                <div class="find-me col-md-5 order-1 order-md-1 rounded my-4 p-3 d-flex flex-column align-items-center">
+                <div class="find-me col-md-5 rounded m-4 p-3 d-flex flex-column align-items-center">
                     <h3 class="find-me-title text-center font-weight-bold pt-2 pb-4">
                         Find Me
                     </h3>
@@ -409,13 +422,13 @@
                         allowfullscreen="" 
                         loading="lazy">
                     </iframe>
-                    <h4 class="text-center pt-5">"Leading the way in website design."</h4>
+                    <h4 class="text-center py-3">"Leading the way in website design."</h4>
                     <img class="website-logo2 pt-1" src="./designs/website-logo.png" alt="website-logo">
                 </div>
                 <!-- map End -->
  
                 <!-- contact Start -->
-                <div class="contact-form col-md-5 order-2 order-md-2 rounded my-4 py-4 mx-4">
+                <div class="contact-form col-md-5 rounded m-4 py-4">
                     <h3 class="contact-me-title text-center font-weight-bold pb-4">
                         Contact Me
                     </h3>
@@ -479,28 +492,26 @@
 
         <!-- pre-footer Start -->
         <section id="pre-footer">
-                <div class="col-md-6">
-                    <h4 class="footer-text font-weight-bold">Follow</h4>
-                    <a href="#"><img class="prefooter-icons m-3" src="designs/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="prefooter-icons m-3" src="designs/instagram.png" alt="instagram"></a>
-                    <a href="#"><img class="prefooter-icons m-3" src="designs/twitter.png" alt="twitter"></a>
-                    <a href="#"><img class="prefooter-icons m-3" src="designs/email.png" alt="email"></a>
-                    <a href="#"><img class="prefooter-icons m-3" src="designs/linked-in.png" alt="linked in"></a>
-                </div>
-                <div class="col-md-6 text-white">
-                    <h4 class="footer-text font-weight-bold">Contact</h4>
-                    <ul>
-                        <li>09099621737 (TNT)</li>
-                        <li>eric.alina2020@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 text-white">
-                    <h4 class="footer-text font-weight-bold">Subscribe</h4>
-                    <form>
-                        <input class="px-1" type="email" name="subscribe" placeholder="Email" required>
-                        <button class="btn3 rounded my-2" type="submit">Subscribe</button>
-                    </form>
-                </div>            
+            <div class="col">
+                <h4 class="footer-text font-weight-bold">Follow</h4>
+                <a href="https://www.facebook.com/eric.alina.90/" target="_blank"><img class="prefooter-icons m-3" src="designs/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/eric.alina.90/" target="_blank"><img class="prefooter-icons m-3" src="designs/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img class="prefooter-icons m-3" src="designs/twitter.png" alt="twitter"></a>
+                <a href="https://www.google.com/intl/fil/gmail/about/" target="_blank"><img class="prefooter-icons m-3" src="designs/email.png" alt="email"></a>
+                <a href="https://www.linkedin.com/in/eric-alina-181908200/" target="_blank"><img class="prefooter-icons m-3" src="designs/linked-in.png" alt="linked in"></a>
+            </div>
+            <div class="col-md-6 text-white">
+                <h4 class="footer-text font-weight-bold">Contact</h4>
+                <p>09099621737 (TNT)</p>
+                <p>eric.alina2020@gmail.com</p>
+            </div>
+            <div class="col">
+                <h4 class="footer-text font-weight-bold">Subscribe</h4>
+                <form>
+                    <input class="px-1" type="email" name="subscribe" placeholder="Email" required>
+                    <button class="btn3 rounded my-2" type="submit">Subscribe</button>
+                </form>
+            </div>         
         </section>
         <!-- pre-footer End -->
 
