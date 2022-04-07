@@ -4,7 +4,7 @@
         <!-- Meta Tags -->
         <meta charset="utf-8">
         <!-- Mobile Responsive Meta Tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap Link -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
@@ -23,23 +23,31 @@
         <title>Developer Portfolio</title>
     </head>
     <body>
-
         <!-- Sticky Navbar Start -->
-        <nav class="navbar sticky-top navbar-expand-md py-1">
-            <a class="navbar" href="#">
-                <!-- website-logo -->
-                <img class="website-logo1" src="./designs/website-logo.png" alt="website-logo">
-            </a>
+        <nav class="navbar sticky-top navbar-expand-md p-1">
+            <div class="navleft-section d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <!-- website logo -->
+                    <img class="website-logo1 m-2" src="./designs/website-logo.png" alt="website-logo">
+                </a>
+                <!-- website title -->
+                <div class="logo-adjacent-text d-flex align-items-center font-weight-bold p-1">
+                    DEVELOPER PORTFOLIO
+                </div>
+            </div>
+
             <!-- burger button -->
-            <button class="navbar-toggler navbar-light"
+            <button class="navbar-toggler navbar-light m-1"
                     type="button"
                     data-toggle="collapse"
                     data-target="#myNavbarMenu"
                     aria-controls="myNavbarMenu"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
+                    <span class="my-1 mx-2 close">X</span>
                     <span class="navbar-toggler-icon"></span>
             </button>
+
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="myNavbarMenu">
                 <ul class="navbar-nav mr-auto">
@@ -97,11 +105,11 @@
                     </div>
                     <p class="l-page-text3 ml-4">Need a new website? Let's make your ideas come alive.
                     </p>
-                    <a href="https://drive.google.com/file/d/1pHY53jaGpmX7ICWr0I3CvGCgigTNNbvm/view?usp=sharing" target="_blank">
-                        <button class="btn0 ml-4 mb-1 px-1 py-1">Download CV</button>
+                    <a href="https://drive.google.com/file/d/1tZC2JCObKpWjt0cLHseHql4tusRQqI7o/view?usp=sharing" target="_blank">
+                        <button class="btn0 ml-4 mb-1 px-2 py-1">Download Resume</button>
                     </a>
                     <a href="#projects">
-                        <button class="btn0 mt-1 ml-4 px-1 py-1">View My Work</button>
+                        <button class="btn0 mt-1 ml-4 p-1">View Projects</button>
                     </a>
                 </div>        
             </div>
@@ -148,8 +156,9 @@
 
                 <div id="about-me-border" class="col-md-5 mx-3">
                     <h1 class="my_name my-1">ERIC D. ALINA, LPT</h1>
-                    <h4 class="title py-1">Full-Stack Web Developer | Mobile App Developer</h4>
-                    <p class="text-justify">
+                    <h4 class="title">Full-Stack Web Developer</h4>
+                    <h4 class="title">Block-based Programmer</h4>
+                    <p class="text-justify font-weight-bold">
                         I'm a Licensed Professional Teacher currently taking my graduate studies on MA in Physics Education at Bicol University Graduate School. I create and design e-portfolios and e-commerce websites for businesses and/or service providers. In school, I also develop Android-based mobile apps using the open-source MIT App Inventor for educational purposes. 
                     </p>
                 </div>
@@ -157,17 +166,16 @@
         </div>
         <!-- About Me End -->
 
-
         <!-- Projects Start -->
         <div id="projects" class="container-fluid pt-3 pb-4">
             <h1 class="text-center font-weight-bold pt-5 pb-4">PROJECTS</h1>
 
             <!-- website 1 Start -->
             <div class="row d-flex flex-row justify-content-center align-items-center">
-                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-5 order-1 order-md-1 d-flex flex-column justify-content-center align-items-center">
                     <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website1.png" alt="Fantastic Voyages">
                 </div>
-                <div class="project-details col-md-5 mx-5">
+                <div class="project-details order-2 order-md-2 col-md-5 mx-3">
                     <h3 class="py-1">Fantastic Voyages</h3>
                     <p class="text-justify">A traveling agency that opens the door to an incredible vacation through professionally assisted trip planning. Fantastic Voyages is an ultimate trip planners!</p>
                     <span>
@@ -181,10 +189,7 @@
 
             <!-- website 2 Start -->
             <div class="row d-flex flex-row justify-content-center align-items-center">
-                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
-                    <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website2.png" alt="Broadwood Realty">
-                </div>
-                <div class="project-details col-md-5 mx-5">
+                <div class="project-details order-2 order-md-1 col-md-5 mx-3">
                     <h3 class="py-1">Broadwood Realty</h3>
                     <p class="text-justify">A real estate company and a life-changer in terms of providing an opportunity of home that matches one's dream.</p>
                     <span>
@@ -192,6 +197,9 @@
                             <button class="btn">View</button>
                         </a>
                     </span>    
+                </div>
+                <div class="col-md-5 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
+                    <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website2.png" alt="Broadwood Realty">
                 </div>
             </div>
             <!-- website 2 End -->
@@ -201,7 +209,7 @@
                 <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website3.png" alt="Broadlife Insurance">
                 </div>
-                <div class="project-details col-md-5 mx-5">
+                <div class="project-details col-md-5 mx-3">
                     <h3 class="py-1">Broadlife Insurance</h3>
                     <p class="text-justify">A life insurance company that cares for you and your family. It is a kind of financial protection that everybody wants in cases of unfortunate events. Well insured, well lived. Get insured now!</p>
                     <span>
@@ -215,10 +223,7 @@
 
             <!-- website 4 Start -->
             <div class="row d-flex flex-row justify-content-center align-items-center">
-                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
-                    <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website4.png" alt="Rank Higher Digital">
-                </div>
-                <div class="project-details col-md-5 mx-5">
+                <div class="project-details order-2 order-md-1 col-md-5 mx-3">
                     <h3 class="py-1">Rank Higher Digital</h3>
                     <p class="text-justify">A digital marketing agency that gives powerful ideas and accelerate business sales. Rank Higher Digital is truly the powerhouse for digital marketing solutions.</p>
                     <span>
@@ -226,6 +231,9 @@
                             <button class="btn">View</button>
                         </a>
                     </span>    
+                </div>
+                <div class="col-md-5 order-1 order-md-2 d-flex flex-column justify-content-center align-items-center">
+                    <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website4.png" alt="Rank Higher Digital">
                 </div>
             </div>
             <!-- website 4 End -->
@@ -235,7 +243,7 @@
                 <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="project-img img-fluid w-100 h-100 m-5" src="websites/website5.png" alt="Urban Wear">
                 </div>
-                <div class="project-details col-md-5 mx-5">
+                <div class="project-details col-md-5 mx-3">
                     <h3 class="py-1">Urban Wear</h3>
                     <p class="text-justify">A clothing company for upgrading your fashion taste. True urban style never dies. Explore your style. Be exclusive, be divine, be yourself.</p>
                     <span>
@@ -301,7 +309,7 @@
 
                 <div class="other-project-details col-md-5 mx-3 d-flex flex-column justify-content-center my-5">
                     <h3 class="subtitle font-weight-bold py-1">Particleus</h3>
-                    <p class="subtitle text-justify">This mobile application aims to provide basic knowledge of elementary particles to all learners around the world (especially kids). It contains simple games and graphics which acquaint one with some of the elementary particles by playing the memory and matching game, and quark combinations through naming baryons and mesons. Also, familiarize yourself with electron-positron annihilation.</p>
+                    <p class="subtext text-justify font-weight-bold">This mobile application aims to provide basic knowledge of elementary particles to all learners around the world (especially kids). It contains simple games and graphics which acquaint one with some of the elementary particles by playing the memory and matching game, and quark combinations through naming baryons and mesons. Also, familiarize yourself with electron-positron annihilation.</p>
                     <span>
                          <a href="https://play.google.com/store/apps/details?id=appinventor.ai_ericdoria_alina.Particleus" target="_blank">
                             <button class="btn">See more</button>
@@ -358,7 +366,7 @@
 
                 <div class="other-project-details col-md-5 mx-3 d-flex flex-column justify-content-center my-5">
                     <h3 class="subtitle font-weight-bold py-1">Liknayan</h3>
-                    <p class="subtitle text-justify">Liknayan ("Liknayan" - a native Tagalog translation of "Physics", from the root words: "likas" + "hanayan") is an educational app for Physics learning. This app aims to provide a mobile learning experience for Grade 10 learners in Physics through digital copies of Self-Learning Modules (SLMs). The SLMs were derived from the Department of Education Region V - Division of Camarines Sur. Liknayan includes a Physics AI Quiz (with LeoWiz, an AI Quizzerbot) which tests the user's knowledge of the subject. In addition, this app provides an AI note that enables users to write notes either through speech recognition or manual typing.
+                    <p class="subtext text-justify font-weight-bold">Liknayan ("Liknayan" - a native Tagalog translation of "Physics", from the root words: "likas" + "hanayan") is an educational app for Physics learning. This app aims to provide a mobile learning experience for Grade 10 learners in Physics through digital copies of Self-Learning Modules (SLMs). The SLMs were derived from the Department of Education Region V - Division of Camarines Sur. Liknayan includes a Physics AI Quiz (with LeoWiz, an AI Quizzerbot) which tests the user's knowledge of the subject. In addition, this app provides an AI note that enables users to write notes either through speech recognition or manual typing.
                     </p>
                     <span>
                          <a href="https://play.google.com/store/apps/details?id=appinventor.ai_ericdoria_alina.Liknayan" target="_blank">
@@ -406,7 +414,6 @@
             </div>
         </div>
         <!-- Tools End -->    
-
 
         <!-- map and form Start -->
         <div id="contact" class="container pt-3 pb-4">
@@ -457,7 +464,7 @@
                         </div>                                      
                         <div class="form-group">
                             <label for="txt-message">Message</label>
-                            <textarea id="txt-message" class="form-control" rows="5" required></textarea>
+                            <textarea id="txt-message" class="form-control" spellcheck="true" rows="5" required></textarea>
                         </div>
                         <button class="btn2 rounded" type="submit" data-toggle="modal" data-target="#form-modal">Send Email</button>
                         <button type="reset" class="btn2 rounded">Reset</button>
@@ -490,7 +497,7 @@
         </div>
         <!-- Modal End -->
 
-        <!-- pre-footer Start -->
+        <!-- Pre-footer Start -->
         <section id="pre-footer">
             <div class="col">
                 <h4 class="footer-text font-weight-bold">Follow</h4>
@@ -498,7 +505,7 @@
                 <a href="https://www.instagram.com/eric.alina.90/" target="_blank"><img class="prefooter-icons m-3" src="designs/instagram.png" alt="instagram"></a>
                 <a href="https://twitter.com/?lang=en" target="_blank"><img class="prefooter-icons m-3" src="designs/twitter.png" alt="twitter"></a>
                 <a href="https://www.google.com/intl/fil/gmail/about/" target="_blank"><img class="prefooter-icons m-3" src="designs/email.png" alt="email"></a>
-                <a href="https://www.linkedin.com/in/eric-alina-181908200/" target="_blank"><img class="prefooter-icons m-3" src="designs/linked-in.png" alt="linked in"></a>
+                <a href="https://www.linkedin.com/in/eric-doria-alina/" target="_blank"><img class="prefooter-icons m-3" src="designs/linked-in.png" alt="linked in"></a>
             </div>
             <div class="col-md-6 text-white">
                 <h4 class="footer-text font-weight-bold">Contact</h4>
@@ -513,7 +520,7 @@
                 </form>
             </div>         
         </section>
-        <!-- pre-footer End -->
+        <!-- Pre-footer End -->
 
         <!-- Footer Start -->
         <footer class="text-center">

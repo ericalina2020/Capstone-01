@@ -1,5 +1,5 @@
-CSS Reset*/
 /*universal selector*/
+/*CSS Reset*/
 * {
 	margin: 0;
 	padding: 0;
@@ -21,7 +21,7 @@ nav {
 body {
 	font-family: 'Nunito', sans-serif;
 	background-color: #3AAFA9;
-	color: white; 
+	color: #FFFFFF; 
 }
 
 /*sets footer color*/
@@ -31,18 +31,38 @@ footer {
 
 
 /*CLASS SELECTORS*/
+/* navbar left section sizing */
+.navleft-section {
+	width: 45vw;
+}
+
+/* developer portfolio text size */
+.logo-adjacent-text {
+	font-size: 2vmax;
+}
 
 /*navbar website logo styles*/
 .website-logo1 {
-	height: 50px;
-	width: 50px;
-	margin-right: 20px;
+	height: 60px;
+	width: 60px;
+	margin-left: 10px;
 }
 
+/* hamburger button background color */
 .navbar-toggler {
-	background-color: #3AAFA9;
+	background-color: #FFFFFF;
 }
 
+/* changes hamburger button icon to X when collapsed */
+button[aria-expanded="true"] > span.navbar-toggler-icon {
+	  display: none;
+}
+
+/* changes hamburger button icon to --- when hide */
+button[aria-expanded="false"] > span.close {
+	  display: none;
+}
+  
 .nav-item {
 	text-align: center;
 	padding-left: 10px;
@@ -50,7 +70,7 @@ footer {
 
 /*navbar link styles*/
 .nav-link {
-	font-size: 20px;
+	font-size: 18px;
 	color: #FFFFFF;
 	font-weight: bolder;
 }
@@ -64,7 +84,7 @@ footer {
 .btn0 {
 	background-color: #17252A;
 	color: #FEFFFF;
-	width: 150px;
+	width: 180px;
 	border-radius: 10px;
 	border: 2px solid #FEFFFF;
 }
@@ -108,7 +128,7 @@ footer {
 	background-size: cover;
 }
 
-/*parallax scrolling effects for tools section*/
+/*parallax scrolling effect for tools section*/
 .fixed-bg2 {
 	background-image: url(./designs/wevdev1-edited.png);
 	min-height: 70vh;
@@ -184,8 +204,13 @@ footer {
 	color: #17252A;
 }
 
-/*sets a color for Mobile App Projects text*/
+/*sets a color for Particleus and Liknayan title*/
 .subtitle {
+	color: #17252A;	
+}
+
+/*sets a color for Particleus and Liknayan details text*/
+.subtext {
 	color: #17252A;	
 }
 
@@ -208,7 +233,7 @@ footer {
 
 /*enlarge project details when hovered*/
 .project-details:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 /*other project images styles*/
@@ -220,7 +245,7 @@ footer {
 
 /*sets a middle border in other projects section*/
 .other-project-details {
-	border-left: 3px solid #17252A;
+	border-left: 3px solid #FFFFFF;
 }
 
 /*gives a gradient to the background of text in other projects section*/
@@ -327,6 +352,7 @@ footer {
 }
 
 /*CHILD SELECTORS*/
+
 .project-details > h3 {
 	font-weight: bolder;
 	color: #3AAFA9;
@@ -369,6 +395,10 @@ footer {
 /*inline display of nav icons and nav links*/
 #nav-icons, .nav-link {
 	display: inline;
+}
+
+.website-logo1, .logo-adjacent-text {
+	display: inline-block;
 }
 
 /*section names text shadows*/
